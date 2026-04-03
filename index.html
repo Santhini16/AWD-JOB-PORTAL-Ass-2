@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Pro | Find Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🔷</span>
+                <span class="logo-text">CareerHub <span class="pro">Pro</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">🏠 Find Jobs</a>
+                <a href="saved-jobs.html" class="nav-link">📌 Saved Jobs <span id="navSavedCount" class="nav-badge">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-section">
+            <h1>Discover Your Dream Career</h1>
+            <p>10,000+ opportunities from top companies worldwide</p>
+        </div>
+
+        <div class="container">
+            <div class="filters-card">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Job title, company, or location...">
+                </div>
+                <select id="companyFilter">
+                    <option value="all">All Companies</option>
+                </select>
+                <select id="roleFilter">
+                    <option value="all">All Roles</option>
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Backend">Backend Developer</option>
+                    <option value="Full Stack">Full Stack Developer</option>
+                    <option value="DevOps">DevOps Engineer</option>
+                    <option value="Data Science">Data Scientist</option>
+                    <option value="Product">Product Manager</option>
+                    <option value="Design">UI/UX Designer</option>
+                </select>
+                <select id="locationFilter">
+                    <option value="all">All Locations</option>
+                </select>
+                <button id="resetBtn" class="reset-btn">Reset All</button>
+            </div>
+
+            <div class="stats-bar">
+                <span id="resultCount">0</span> jobs found
+                <a href="saved-jobs.html" class="saved-link">View Saved Jobs →</a>
+            </div>
+
+            <div id="jobsGrid" class="jobs-grid"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 CareerHub Pro — Your Trusted Job Portal</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
