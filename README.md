@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 # CareerHub Pro - Professional Job Portal
 
-## 🚀 Features
+##  Features
 
 - **Multi-page architecture** with separate HTML files
 - **Advanced filtering** by company, role type, and location
@@ -13,4 +13,4 @@
 - **Real location data** with original city/state information
 - **Company benefits** and culture information
 
-## 📁 Project Structure
+
